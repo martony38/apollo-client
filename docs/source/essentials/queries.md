@@ -291,13 +291,13 @@ The render prop function that you pass to the `children` prop of `Query` is call
   <dt>`refetch`: (variables?: TVariables) => Promise<ApolloQueryResult></dt>
   <dd>A function that allows you to refetch the query and optionally pass in new variables</dd>
   <dt>`fetchMore`: ({ query?: DocumentNode, variables?: TVariables, updateQuery: Function}) => Promise<ApolloQueryResult></dt>
-  <dd>A function that enables [pagination](../features/pagination.html) for your query</dd>
+  <dd>A function that enables <a href="../features/pagination.html">pagination</a> for your query</dd>
   <dt>`startPolling`: (interval: number) => void</dt>
   <dd>This function sets up an interval in ms and fetches the query each time the specified interval passes.</dd>
   <dt>`stopPolling`: () => void</dt>
   <dd>This function stops the query from polling.</dd>
   <dt>`subscribeToMore`: (options: { document: DocumentNode, variables?: TVariables, updateQuery?: Function, onError?: Function}) => () => void</dt>
-  <dd>A function that sets up a [subscription](../advanced/subscriptions.html). `subscribeToMore` returns a function that you can use to unsubscribe.</dd>
+  <dd>A function that sets up a <a href="../advanced/subscriptions.html">subscription</a>. `subscribeToMore` returns a function that you can use to unsubscribe.</dd>
   <dt>`updateQuery`: (previousResult: TData, options: { variables: TVariables }) => TData</dt>
   <dd>A function that allows you to update the query's result in the cache outside the context of a fetch, mutation, or subscription</dd>
   <dt>`client`: ApolloClient</dt>
